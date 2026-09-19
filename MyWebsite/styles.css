@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+
+
+.logo-text{
+    background-color: blue;
+    display:inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+.logo > ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-links > a{
+    text-decoration: none;
+    color: black;
+}
