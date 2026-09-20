@@ -3,49 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdulbasit</title>
+    <meta
+        name="description"
+        content="Abdulbasit Soliu — IT professional working with Azure, identity, and automation."
+    >
+    <title>Abdulbasit Soliu | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar" aria-label="Main navigation">
-    <a class="brand" href="./index.html" >
-        <span class="logo-text">AS</span>
-        <span>Abdulbasit Soliu</span>
-    </a>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="brand" href="./index.html">
+                <span class="logo-text" aria-hidden="true">AS</span>
+                <span>Abdulbasit Soliu</span>
+            </a>
 
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<main>
-    <div class="hero">
-        <div class="hero-content">
-            <p>CLOUD . IDENTITY . AUTOMATION</p>
-            <h1>Building solutions. <br/>
-                Learning by doing.
-            </h1>
-            <p>I'm Abdulbasit an IT professional working with Azure, Identity and automation,
-                and growing my skills in c# and Devops.
-            </p>
-            <a href="#projects" class="btn">View My Projects</a>
-            <a href="#contact" id="GetInTouch" class="btn">Get in Touch</a>
-        </div>
-        <div class="hero-TechStack">
-            <div class="stack-header">
-                <p>MY TOOLKIT</p>
-                <img src="images/code-icon.png" alt="Toolkit Icon" class="stack-icon">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-            <h3 >Azure</h3>
-            <h3 >PowerShell</h3>
-            <h3 >Microsoft Entra ID</h3>
-            <hr/>
-            <p>Currently Learning</p>
-            <p>DevOps</p>
-        </div>
-    </div>
-</main>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Cloud · Identity · Automation</p>
+
+                <h1 id="hero-title">
+                    Building solutions.<br>
+                    Learning by doing.
+                </h1>
+
+                <p class="hero-description">
+                    I'm Abdulbasit, an IT professional working with Azure,
+                    identity, and automation, and growing my skills in C#
+                    and DevOps.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">
+                        View My Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+
+            <section class="toolkit" aria-labelledby="toolkit-title">
+                <div class="stack-header">
+                    <h2 id="toolkit-title" class="eyebrow">My Toolkit</h2>
+                    <img
+                        src="Images/code-icon.png"
+                        alt=""
+                        class="stack-icon"
+                        width="30"
+                        height="30"
+                    >
+                </div>
+
+                <ul class="toolkit-list">
+                    <li>Azure</li>
+                    <li>PowerShell</li>
+                    <li>Microsoft Entra ID</li>
+                </ul>
+
+                <div class="learning">
+                    <h3>Currently Learning</h3>
+                    <p>C# and DevOps</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Add About, Projects, and Contact sections here later.
+             Use id="about", id="projects", and id="contact". -->
+    </main>
 </body>
 </html>
