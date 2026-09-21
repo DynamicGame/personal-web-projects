@@ -3,82 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"
-        content="Abdulbasit Soliu — IT professional working with Azure, identity, and automation."
-    >
+    <meta name="description" content="Abdulbasit Soliu — IT professional building practical solutions with Azure, identity, and automation.">
     <title>Abdulbasit Soliu | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <nav class="navbar container" aria-label="Main navigation">
-            <a class="brand" href="./index.html">
-                <span class="logo-text" aria-hidden="true">AS</span>
-                <span>Abdulbasit Soliu</span>
-            </a>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Reusable decorative icons. -->
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <symbol id="icon-code" viewBox="0 0 64 64"><path d="m19 20-11 12 11 12m26-24 11 12-11 12M39 8 25 56" /></symbol>
+        <symbol id="icon-power" viewBox="0 0 64 64"><path d="M32 7v25M20 17a23 23 0 1 0 24 0" /></symbol>
+        <symbol id="icon-shield" viewBox="0 0 64 64"><path d="M32 5c8 6 15 9 24 11 0 20-8 34-24 43C16 50 8 36 8 16c9-2 16-5 24-11Z" /></symbol>
+    </svg>
 
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-content">
-                <p class="eyebrow">Cloud · Identity · Automation</p>
-
-                <h1 id="hero-title">
-                    Building solutions.<br>
-                    Learning by doing.
-                </h1>
-
-                <p class="hero-description">
-                    I'm Abdulbasit, an IT professional working with Azure,
-                    identity, and automation, and growing my skills in C#
-                    and DevOps.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#projects" class="btn">
-                        View My Projects
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        Get in Touch
-                    </a>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="navbar container" aria-label="Main navigation">
+                <a class="brand" href="./index.html">
+                    <span class="logo-text" aria-hidden="true">AS</span>
+                    <span>Abdulbasit Soliu</span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation" hidden>
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-links" id="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </div>
-            </div>
+            </nav>
+        </header>
 
-            <section class="toolkit" aria-labelledby="toolkit-title">
-                <div class="stack-header">
-                    <h2 id="toolkit-title" class="eyebrow">My Toolkit</h2>
-                    <img
-                        src="Images/code-icon.png"
-                        alt=""
-                        class="stack-icon"
-                        width="30"
-                        height="30"
-                    >
+        <main class="container" id="main" tabindex="-1">
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <p class="eyebrow">Cloud · Identity · Automation</p>
+                    <h1 id="hero-title"><span>Building solutions.</span> <span>Learning by doing.</span></h1>
+                    <p class="hero-description">I'm Abdulbasit, an IT professional working with Azure, identity and automation, and growing my skills in C# and DevOps.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn">View my projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+                    </div>
                 </div>
+                <section class="toolkit" aria-labelledby="toolkit-title">
+                    <svg class="icon toolkit-icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+                    <h2 class="eyebrow" id="toolkit-title">My toolkit</h2>
+                    <ul class="toolkit-list"><li>Azure</li><li>PowerShell</li><li>Microsoft Entra ID</li></ul>
+                    <div class="learning">
+                        <h3 class="eyebrow">Currently learning</h3>
+                        <p>C# · Front-end · DevOps</p>
+                    </div>
+                </section>
+            </section>
 
-                <ul class="toolkit-list">
-                    <li>Azure</li>
-                    <li>PowerShell</li>
-                    <li>Microsoft Entra ID</li>
-                </ul>
-
-                <div class="learning">
-                    <h3>Currently Learning</h3>
-                    <p>C# and DevOps</p>
+            <section class="projects section" id="projects" aria-labelledby="projects-title">
+                <div class="section-heading">
+                    <h2 id="projects-title">Selected projects</h2>
+                    <a href="https://github.com/DynamicGame/">GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-image"><svg class="icon" aria-hidden="true"><use href="#icon-power"></use></svg></div>
+                        <h3>Azure VM Automation</h3>
+                        <p>Scheduled VM startup using PowerShell and managed identity.</p>
+                        <ul class="tags" aria-label="Technologies used"><li>Azure</li><li>PowerShell</li></ul>
+                        <span class="project-link pending-link">Project link coming soon</span>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg></div>
+                        <h3>WireGuard Office VPN</h3>
+                        <p>A secure office VPN for remote connectivity.</p>
+                        <ul class="tags" aria-label="Technologies used"><li>Linux</li><li>Networking</li></ul>
+                        <span class="project-link pending-link">Project link coming soon</span>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></div>
+                        <div class="project-title"><h3>C# Learning Project</h3><span class="status">In progress</span></div>
+                        <p>A space for my next practical C# application.</p>
+                        <ul class="tags" aria-label="Technologies used"><li>C#</li><li>.NET</li></ul>
+                        <span class="project-link pending-link">Coming soon</span>
+                    </article>
                 </div>
             </section>
-        </section>
 
-        <!-- Add About, Projects, and Contact sections here later.
-             Use id="about", id="projects", and id="contact". -->
-    </main>
+            <section class="about section" id="about" aria-labelledby="about-title">
+                <div class="about-copy">
+                    <h2 id="about-title">A little about me</h2>
+                    <p>I enjoy solving everyday IT problems and turning repetitive work into practical automation. This portfolio grows as I learn and build.</p>
+                </div>
+                <ul class="tags skills" aria-label="My skills"><li>Azure</li><li>Entra ID</li><li>Intune</li><li>PowerShell</li><li>C#</li></ul>
+            </section>
+            <section class="contact section" id="contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">Let’s connect.</h2>
+                <div class="contact-details">
+                    <ul class="contact-links" aria-label="Contact options">
+                        <li><a href="https://github.com/DynamicGame/">GitHub <span aria-hidden="true">↗</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/abdulbasit-soliu-75901b250">LinkedIn <span aria-hidden="true">↗</span></a></li>
+                        <li><a href="mailto:soliuabdulbasit03@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer container"><p>Abdulbasit Soliu</p></footer>
+    </div>
 </body>
 </html>
